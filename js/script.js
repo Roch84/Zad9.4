@@ -1,13 +1,14 @@
-var height = prompt('Podaj wysokość choinki');
+var tree = prompt('Podaj wysokość choinki');
 
-drawTree (height);
+drawTree (tree);
 
 function drawTree (treeHeight) {
 	
-for ( var i = 0 ; i <= height ; i++) {
+for ( var i = 0 ; i <= treeHeight ; i++) {
   		var star = '';
 		for ( var j = 1 ; j <= i ; j++){
 			star += '*';
-		} console.log(star);
+		} 
+		console.log(star);
 	}
 }
